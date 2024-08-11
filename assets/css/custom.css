@@ -94,7 +94,6 @@ body{
     background: transparent;
     box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
     position: relative;
-    width: ;
     height: 330px;
     border-radius: 16px;
     overflow: hidden;
@@ -463,7 +462,6 @@ cursor: pointer;
 }
 .employee-card{
   margin-top: 13rem;
-  padding: ;
 }
 .employee-title{
   font-size: 48px;
@@ -637,11 +635,8 @@ cursor: pointer;
 .collaborate-btn-2:hover  .icon-path {
   stroke: #60A5FA; /* Change stroke color to black on hover */
 }
-/* footer */
-.footer{
-  height: 685px;
 
-}
+/* footer */
 .footer-logo{
   margin-top: 6rem;
 }
@@ -659,7 +654,6 @@ cursor: pointer;
   border-radius: 15px;
   padding: 5px;
   background-color: #F9F9F9;
-  width: 35%;
   margin: 0 auto;
   
 }
@@ -714,7 +708,65 @@ cursor: pointer;
   font-weight: 600;
 }
 
+/* Testimonials */
+.bg-testimonial{
+  background: #60A5FA;
+}
+.testimonial-desc{
+  font-size: 14px;
+  color: white;
+}
 
+/* Card */
+.custom-card {
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+}
+
+.star-icon {
+  fill: #FF7A00; /* Gold color for filled stars */
+  stroke: #FF7A00;
+  cursor: pointer;
+  transition: fill 0.2s ease-in-out;
+}
+
+.star-icon:hover,
+.star-icon:hover ~ .star-icon {
+  fill: #e0e0e0; /* Lighter color on hover */
+}
+
+/* Blog Card */
+.card-1 {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid #DBDBDB;
+  transition: 0.2s ease-in-out;
+}
+.card-1:hover {
+  background: white;
+  box-shadow: 0.1rem 0.7rem 0.8rem rgba(0, 0, 0, .075) !important;
+}
+
+.card-title {
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.1s ease-in-out;
+}
+.card-title:hover {
+  color: #3B82F6;
+}
+.card-image-2 {
+  height: 220px;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+.card-nap{
+  text-decoration: none;
+  color: #353535d6;
+  font-size: 14px;
+  font-weight: 600;
+}
 
 
 /* responsive */
@@ -736,4 +788,120 @@ cursor: pointer;
   .font-2rem{
     font-size: 1.5rem;
   }
+}
+
+/* Privacy */
+.section-title1 {
+  color: #1a73e8;
+  font-weight: bold;
+}
+
+.contact-header {
+  background-color: #4285f4;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.contact-header h2 {
+  margin: 0;
+}
+
+.contact-form {
+  padding: 40px 0;
+}
+
+.contact-info {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.contact-info p {
+  margin: 0;
+}
+
+.cta-buttons a {
+  margin: 0 10px;
+}
+
+.btn-primary {
+  background-color: #1a73e8;
+  border-color: #1a73e8;
+}
+
+.btn-primary:hover {
+  background-color: #155ab4;
+  border-color: #155ab4;
+}
+
+.btn-light {
+  color: #1a73e8;
+  border-color: #1a73e8;
+}
+
+.btn-light:hover {
+  background-color: #e3f2fd;
+}
+
+.cta-image {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.carousel-inner img {
+  border-radius: 8px;
+}
+
+/* Carousel adjustments */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  z-index: 10;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 767.98px) {
+  .contact-form .row {
+      flex-direction: column-reverse;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+      width: 10%;
+  }
+}
+
+/* Carousel */
+.slide {
+  height: auto !important;
+}
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+  border-radius: 40% 0 40% 0%;
+  margin-right: 10px;
+  background-color: #1a73e8 !important;
+}
+.carousel-indicators {
+  bottom: -60px;
+}
+.carousel-item {
+  overflow: hidden;
+  border-radius: 1rem;
 }
