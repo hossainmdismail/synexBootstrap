@@ -79,6 +79,10 @@ body{
   background: rgba(255, 255, 255, 0.942);
   color: #3B82F6;
 }
+.btn-sm {
+  padding: 4px  15px;
+  border-radius: 0.5rem;
+}
 
 .active {
     color: #3B82F6 !important;
@@ -101,6 +105,19 @@ body{
   font-size: 37px;
 }
 
+.service-hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 !important;
+  height: 90vh;
+}
+.shadow{
+  background: #00000090;
+  width: 100%;
+  height: 90vh;
+  backdrop-filter: blur(3px);
+}
 /* Card */
 .e-card {
     background: transparent;
@@ -795,44 +812,6 @@ cursor: pointer;
   font-weight: 600;
 }
 
-
-/* responsive */
-@media (max-width: 576px) {
-  .leftsvg{
-    width: 12rem;
-    top: 12rem;
-  }
-  .rightsvg{
-    width: 12rem;
-    top: 12rem;
-  }
-  .teamworkjpg{
-    margin-left: 0;
-  }
-  .experience-card{
-    padding: 33px;
-  }
-  .font-2rem{
-    font-size: 1.5rem;
-  }
-  .footer-title{
-    font-size: 26px;
-    color:#374151;
-    margin: 0 auto;
-    width:100%;
-    
-  }
-  .section-title {
-    font-size: 30px;
-  }
-  .leading-font-main {
-    font-size: 32px;
-  }
-  .image-record {
-      height: 51vh;
-  }
-}
-
 /* Privacy */
 .section-title1 {
   color: #1a73e8;
@@ -917,17 +896,7 @@ cursor: pointer;
   z-index: 10;
 }
 
-/* Adjustments for smaller screens */
-@media (max-width: 767.98px) {
-  .contact-form .row {
-      flex-direction: column-reverse;
-  }
 
-  .carousel-control-prev,
-  .carousel-control-next {
-      width: 10%;
-  }
-}
 
 /* Carousel */
 .slide {
@@ -955,4 +924,138 @@ cursor: pointer;
 }
 .copyright {
   color: #252222c2;
+}
+.caption {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.795);
+  letter-spacing: 0.8px;
+  font-size: 18px;
+}
+.scroll-text {
+  color: white;
+  animation-name: scroll;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+
+}
+@keyframes scroll {
+  0%   {color: #155ab4;}
+  50%  {color: white;}
+  100% {color: #155ab4;}
+}
+
+.scrolldown path {
+  transition: 0.2s ease-in-out;
+}
+.scrolldown:hover path {
+  transition: 0.2s ease-in-out;
+  stroke: #1a73e8;
+}
+.service-card {
+  width: 75%;
+}
+.serviceimg-box {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.service-image {
+  position: absolute;
+  left: -70px;
+  z-index: 1;
+  width: 90%;
+  border-radius: 1rem;
+}
+.service-image-right {
+  position: absolute;
+  right: -70px;
+  z-index: 1;
+  width: 90%;
+  border-radius: 1rem;
+}
+ul.service-list {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+}
+ul.service-list li {
+  padding-bottom: 0.8rem;
+}
+
+ul.service-list li span {
+  padding-right: 5px;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 767.98px) {
+  .contact-form .row {
+      flex-direction: column-reverse;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+      width: 10%;
+  }
+  .service-card {
+    width: 90%;
+  }
+  .serviceimg-box {
+    display: flex;
+    align-items: center;
+    height: 200px;
+  }
+  .service-image {
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    border-radius: 1rem;
+  }
+  .service-image-right {
+    width: 100%;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    border-radius: 1rem;
+  }
+}
+
+/* responsive */
+@media (max-width: 576px) {
+  .leftsvg{
+    width: 12rem;
+    top: 12rem;
+  }
+  .rightsvg{
+    width: 12rem;
+    top: 12rem;
+  }
+  .teamworkjpg{
+    margin-left: 0;
+  }
+  .experience-card{
+    padding: 33px;
+  }
+  .font-2rem{
+    font-size: 1.5rem;
+  }
+  .footer-title{
+    font-size: 26px;
+    color:#374151;
+    margin: 0 auto;
+    width:100%;
+    
+  }
+  .section-title {
+    font-size: 30px;
+  }
+  .leading-font-main {
+    font-size: 32px;
+  }
+  .image-record {
+      height: 51vh;
+  }
+  .caption {
+    font-size: 16px;
+  }
 }
